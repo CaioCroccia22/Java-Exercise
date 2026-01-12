@@ -7,7 +7,9 @@ public class Media {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+		Media m = new Media();
+		int valor = m.verificarNumero();
+		System.out.println("A média é" + " " + valor);
 	};
 	
 	public int verificarNumero() {
