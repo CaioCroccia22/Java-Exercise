@@ -40,8 +40,10 @@ public class MediaEscolar {
 	public static void verificaSePassou(int media) {
 		if (media >= 7) {
 			System.out.print("Parabénsss, você passou!!");
+		} else if(media >= 5) {
+			System.out.print("Você está de recuperação");
 		} else {
-			System.out.print("Você não passou de ano");
+			System.out.println("Você está reprovado");
 		}
 	}
 
