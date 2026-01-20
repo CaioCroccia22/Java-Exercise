@@ -1,15 +1,29 @@
 package exerciciocinco;
 
+
+enum Genero {
+	masculino("M"),
+	feminino("F");
+	
+	private String codigo;
+
+	Genero(String codigo) {
+		this.codigo = codigo;
+		
+	}
+}
+
+
 public class Pessoa {
 		private String nome;
-		private char sexo;
+		private Genero sexo;
 		
 		
 		public void setNome(String nome) {
 			this.nome = nome;
 		}
 		
-		public void setSexo(char sexo) {
+		public void setSexo(Genero sexo) {
 			this.sexo = sexo;
 		}
 		
@@ -17,8 +31,13 @@ public class Pessoa {
 			return nome;
 		}
 		
-		public char getSexo() {
+		public Genero getSexo() {
 			return sexo;
+		}
+		
+		public String toString() {
+			return "Nome: " + this.nome + " " + "Sexo: " + this.sexo;
+			
 		}
 		
 }
